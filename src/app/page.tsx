@@ -9,7 +9,7 @@ import Guest_section from "./(home_page_tsx)/Guest_section";
 import Policies_Section from "./(home_page_tsx)/Policies_Section";
 import Card_section from "./(home_page_tsx)/Card_section";
 import Footer from "./(shared_tsx)/Footer";
-import { Navbar } from "./(shared_tsx)/Navbar";
+import Navbar from "./(shared_tsx)/Navbar";
 
 export default function Home() {
   return (
