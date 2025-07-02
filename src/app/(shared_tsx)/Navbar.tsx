@@ -33,7 +33,7 @@ export default function Navbar() {
   ]
 
   return (
-    <header className="sticky top-0 z-50 bg-[#E9F6FF] border-b border-[#d9d9d9]">
+    <header className="sticky top-0 z-50 bg-[#E9F6FF] ">
       <div className="max-w-7xl mx-auto flex items-center justify-between h-[76px] px-4 lg:px-[88px]">
         {/* Logo */}
         <Link href="/">

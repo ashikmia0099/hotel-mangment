@@ -44,7 +44,7 @@ export default function Room_about() {
                     {/* left section */}
                     <div className=' md:col-span-3'>
                         {/* proparty type */}
-                        <div className=' flex gap-5 col-span-3 justify-between md:justify-start '>
+                        <div className=' flex gap-5 col-span-3 justify-between md:justify-start pr-3 md:pr-0'>
                             {/* proparty type */}
                             <div className=' pt-[26px]'>
                                 <div>
@@ -56,13 +56,13 @@ export default function Room_about() {
                                             </Button>
                                         </div>
                                         <div>
-                                            <p className={`text-[#010101] text-[16px] font-[400] ${urbanist.variable} `}>Resorts</p>
+                                            <p className={`text-[#010101] text-sm md:text-[16px] font-[400] ${urbanist.variable} `}>Resorts</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div className=' pt-[26px]'>
+                            <div className=' pt-[26px] pr-2.5 lg:pr-0'>
                                 <div>
                                     <h4 className={`text-lg font-[600] text-[#252525] ${urbanist.variable}`}> Property Area </h4>
                                     <div className='flex items-center justify-center gap-2 pt-4'>
@@ -72,7 +72,7 @@ export default function Room_about() {
                                             </Button>
                                         </div>
                                         <div>
-                                            <p className={`text-[#010101] text-[16px] font-[400] ${urbanist.variable}`}>12000 sqft </p>
+                                            <p className={`text-[#010101] text-sm md:text-[16px] font-[400] ${urbanist.variable}`}>12000 sqft </p>
                                         </div>
                                     </div>
                                 </div>
@@ -80,7 +80,7 @@ export default function Room_about() {
                         </div>
 
                         {/* Features */}
-                        <div className=' pt-5'>
+                        <div className=' pt-5 pr-2.5 lg:pr-0'>
                             <div>
                                 <h4 className={`text-lg font-semibold text-[#252525] ${urbanist.variable}`}>Features</h4>
                             </div>
@@ -93,7 +93,7 @@ export default function Room_about() {
                                         </Button>
                                     </div>
                                     <div>
-                                        <p className={`text-[#010101] text-[16px] font-[400] ${urbanist.variable}`}>Wifi</p>
+                                        <p className={`text-[#010101] text-sm md:text-[16px] font-[400] ${urbanist.variable}`}>Wifi</p>
                                     </div>
                                 </div>
 
@@ -104,7 +104,7 @@ export default function Room_about() {
                                         </Button>
                                     </div>
                                     <div>
-                                        <p className={`text-[#010101] text-[16px] font-[400] ${urbanist.variable}`}>Dining</p>
+                                        <p className={`text-[#010101] text-sm md:text-[16px] font-[400] ${urbanist.variable}`}>Dining</p>
                                     </div>
                                 </div>
                                 <div className='flex items-center gap-x-2 pt-4'>
@@ -114,7 +114,7 @@ export default function Room_about() {
                                         </Button>
                                     </div>
                                     <div>
-                                        <p className={`text-[#010101] text-[16px] font-[400] ${urbanist.variable}`}>Swimming Pool</p>
+                                        <p className={`text-[#010101] text-sm md:text-[16px] font-[400] ${urbanist.variable}`}>Swimming Pool</p>
                                     </div>
                                 </div>
                             </div>
@@ -127,7 +127,7 @@ export default function Room_about() {
                                         </Button>
                                     </div>
                                     <div>
-                                        <p className={`text-[#010101] text-[16px] font-[400] ${urbanist.variable}`}>Air Conditioning</p>
+                                        <p className={`text-[#010101] text-sm md:text-[16px] font-[400] ${urbanist.variable}`}>Air Conditioning</p>
                                     </div>
                                 </div>
                                 <div className='flex items-center gap-x-2'>
@@ -137,7 +137,7 @@ export default function Room_about() {
                                         </Button>
                                     </div>
                                     <div>
-                                        <p className={`text-[#010101] text-[16px] font-[400] ${urbanist.variable}`}>Gym</p>
+                                        <p className={`text-[#010101] text-sm md:text-[16px] font-[400] ${urbanist.variable}`}>Gym</p>
                                     </div>
                                 </div>
                             </div>
