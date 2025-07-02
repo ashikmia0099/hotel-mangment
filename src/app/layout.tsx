@@ -3,6 +3,8 @@
 import "./globals.css";
 import { DM_Sans } from "next/font/google";
 import type { Metadata } from "next";
+import Navbar from "./(shared_tsx)/Navbar";
+import Footer from "./(shared_tsx)/Footer";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -24,7 +26,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${dmSans.variable} font-sans antialiased`}>
-        {children}
+        <Navbar></Navbar>
+        <main>
+          {children}
+        </main>
+        <Footer></Footer>
       </body>
     </html>
   );

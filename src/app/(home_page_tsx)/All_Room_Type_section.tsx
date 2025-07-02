@@ -3,7 +3,6 @@
 
 import React from 'react'
 
-// import { CiCalendar } from 'react-icons/ci'
 import { FaTv } from 'react-icons/fa';
 import { IoBedOutline, IoWifi } from "react-icons/io5";
 import { MdOutlineBathroom } from "react-icons/md";

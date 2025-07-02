@@ -10,6 +10,7 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import logo from '../../../public/home_images/room_logo.png'
 import flag from '../../../public/home_images/spain.png'
 import notification from '../../../public/home_images/notification.png'
+import { IoMenu } from "react-icons/io5";
 
 import { AiOutlineEuroCircle } from 'react-icons/ai'
 import { IoIosArrowDown } from 'react-icons/io'
@@ -21,11 +22,11 @@ export default function Navbar() {
   const [open, setOpen] = useState(false)
 
   const links = [
-    { name: 'Home', href: '/MarketPlaces' },
-    { name: 'Hotels', href: '/Rankings' },
-    { name: 'House', href: '/MyNft' },
-    { name: 'About Us', href: '/NftDetails' },
-    { name: 'Contact Us', href: '/GenerateNft' },
+    { name: 'Home', href: '/' },
+    { name: 'Hotels', href: '/Hotels' },
+    { name: 'House', href: '/House' },
+    { name: 'About Us', href: '/About' },
+    { name: 'Contact Us', href: '/Contact' },
   ]
 
   return (
@@ -52,30 +53,30 @@ export default function Navbar() {
         {/* Right Side Buttons */}
         <div className="hidden lg:flex items-center gap-3">
           {/* Currency */}
-          <Button variant="outline" className="rounded-full px-3 border-[#A5D3F1] h-10">
+          <Button variant="outline" className="rounded-full px-3 border-[#A5D3F1]  bg-[#E9F6FF] w-[83px] h-10 cursor-pointer">
             <AiOutlineEuroCircle className="text-2xl text-[#535353]" />
             <IoIosArrowDown className="text-2xl text-[#007DD0]" />
           </Button>
 
           {/* Flag */}
-          <Button variant="outline" className="rounded-full px-3 border-[#A5D3F1] h-10">
+          <Button variant="outline" className="rounded-full px-3 border-[#A5D3F1] bg-[#E9F6FF] w-[83px] h-10 cursor-pointer">
             <Image src={flag} alt="flag" className="w-6 h-6 rounded-full" />
             <IoIosArrowDown className="text-2xl text-[#007DD0]" />
           </Button>
 
           {/* List property */}
-          <Button className="bg-white border border-[#A5D3F1] text-[#007DD0] rounded-full h-10 px-5 hover:bg-[#f0faff]">
+          <Button className=" border border-[#A5D3F1] text-[#007DD0] rounded-full h-10 px-5 bg-[E9F6FF] hover:bg-[#E9F6FF] cursor-pointer">
             List your property
             <GoArrowUpRight className="text-xl ml-1" />
           </Button>
 
           {/* Notification */}
-          <Button className="bg-white rounded-full h-10 w-10 p-0 flex items-center justify-center">
+          <Button className="E9F6FF rounded-full h-10 w-10 p-0 flex items-center justify-center cursor-pointer">
             <Image src={notification} alt="notification" className="w-6 h-6" />
           </Button>
 
           {/* Profile */}
-          <Button className="bg-white border border-[#A5D3F1] text-[#007DD0] rounded-full h-10 px-3">
+          <Button className="E9F6FF border border-[#A5D3F1] text-[#007DD0] rounded-full h-10 px-3 cursor-pointer">
             <PiUserLight className="text-xl" />
             <span className="ml-1">Sunan</span>
           </Button>
@@ -85,25 +86,23 @@ export default function Navbar() {
         <div className="lg:hidden">
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
+              <Button variant="ghost" size="icon" className='border border-[#A5D3F1] rounded-md'>
+                <IoMenu className=' text-black text-4xl' />
               </Button>
             </SheetTrigger>
-            <SheetContent side="left" className="bg-[#2B2B2B] text-white w-[80%]">
+            <SheetContent side="left" className="bg-[#E9F6FF] text-[#007DD0] w-[80%] pl-5 pt-5">
               <div className="flex justify-between items-center mb-6">
                 <Image src={logo} alt="logo" className="w-[90px] h-[30px]" />
-                <button onClick={() => setOpen(false)}>
-                  <RxCrossCircled className="text-3xl text-white" />
+                <button onClick={() => setOpen(false)} className=' pr-2'>
+                  <RxCrossCircled className="text-3xl text-[#007DD0]" />
                 </button>
               </div>
-              <ul className="space-y-6 mt-8">
+              <ul className="space-y-3 mt-1">
                 {links.map((link) => (
                   <li key={link.name}>
                     <Link
                       href={link.href}
-                      className="text-white text-lg font-medium"
+                      className="text-[#007DD0] text-lg font-medium"
                       onClick={() => setOpen(false)}
                     >
                       {link.name}

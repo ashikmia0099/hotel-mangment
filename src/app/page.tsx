@@ -8,14 +8,12 @@ import Explore_area_section from "./(home_page_tsx)/Explore_area_section";
 import Guest_section from "./(home_page_tsx)/Guest_section";
 import Policies_Section from "./(home_page_tsx)/Policies_Section";
 import Card_section from "./(home_page_tsx)/Card_section";
-import Footer from "./(shared_tsx)/Footer";
-import Navbar from "./(shared_tsx)/Navbar";
+
 
 export default function Home() {
   return (
    
     <div>
-      <Navbar></Navbar>
       <Banner_Header_Text></Banner_Header_Text>
       <Banner_Image></Banner_Image>
       <Room_about></Room_about>
@@ -26,7 +24,6 @@ export default function Home() {
       <Guest_section></Guest_section>
       <Policies_Section></Policies_Section>
       <Card_section></Card_section>
-      <Footer></Footer>
     </div>
   );
 }
