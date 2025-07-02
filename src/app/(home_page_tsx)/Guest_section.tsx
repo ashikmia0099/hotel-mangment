@@ -30,6 +30,14 @@ const roboto = Roboto({
 
 
 
+type Card = {
+  title: string;
+  description: string;
+  stars: number;
+  date: string;
+  author: string;
+ 
+};
 
 
 
@@ -38,13 +46,15 @@ export default function Guest_section() {
     const prevRef = useRef<HTMLElement | null>(null);
     const nextRef = useRef<HTMLElement | null>(null);
 
-    const [cards, setCards] = useState([]);
+    const [cards, setCards] = useState<Card[]>([]);
+     
+    
 
     useEffect(() => {
 
         fetch('json_file/card.json')
             .then(res => res.json())
-            .then(data => {
+            .then((data : Card[]) => {
                 setCards(data)
             })
     }, [])

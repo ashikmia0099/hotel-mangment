@@ -24,17 +24,28 @@ import 'swiper/css/pagination';
 import { Lens } from "../../components/magicui/lens";
 
 
+type Card = {
+  title: string;
+  description: string;
+  rating: number;
+  price: number;
+  bedroom: number;
+  bathroom: number;
+  size: string;
+  image: string;
+};
+
 
 export default function Card_section() {
 
 
-  const [cards, setCards] = useState([])
+  const [cards, setCards] = useState<Card[]>([])
 
   useEffect(() => {
 
     fetch('json_file/card_second.json')
       .then(res => res.json())
-      .then(data => {
+      .then((data : Card[]) => {
         setCards(data)
       })
   }, [])
