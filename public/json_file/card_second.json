@@ -1,0 +1,72 @@
+[
+  {
+    "title": "Sofitel Algiers Hamma Garden",
+    "description": "Sofitel Algiers Hamma Garden offers luxurious accommodations overlooking the stunning Botanical Garden of Hamma.",
+    "rating": 4.5,
+    "price": 699,
+    "bedroom": 2,
+    "bathroom": 2,
+    "size": "1,200",
+    "image": "/images/sofitel.jpg"
+  },
+  {
+    "title": "Hilton Dubai Palm Jumeirah",
+    "description": "Experience beachfront luxury with exceptional amenities and breathtaking sea views in the heart of Dubai.",
+    "rating": 4.7,
+    "price": 850,
+    "bedroom": 3,
+    "bathroom": 2,
+    "size": "1,500",
+    "image": "/images/hilton.jpg"
+  },
+  {
+    "title": "Marina Bay Sands, Singapore",
+    "description": "Iconic hotel with an infinity pool, luxury shopping, fine dining, and unbeatable views of the city skyline.",
+    "rating": 5.0,
+    "price": 1200,
+    "bedroom": 2,
+    "bathroom": 2,
+    "size": "980",
+    "image": "/images/marina.jpg"
+  },
+  {
+    "title": "Four Seasons Resort Bali",
+    "description": "Relax in a beachfront villa surrounded by lush greenery and the serene sounds of the Indian Ocean.",
+    "rating": 4.8,
+    "price": 950,
+    "bedroom": 2,
+    "bathroom": 2,
+    "size": "1,300",
+    "image": "/images/fourseasons.jpg"
+  },
+  {
+    "title": "Burj Al Arab Jumeirah",
+    "description": "Luxury at its peak with personalized service, private beaches, and stunning Arabian Gulf views.",
+    "rating": 5.0,
+    "price": 2000,
+    "bedroom": 3,
+    "bathroom": 3,
+    "size": "2,200",
+    "image": "/images/burjalarab.jpg"
+  },
+  {
+    "title": "The Ritz-Carlton Tokyo",
+    "description": "Elevated elegance with panoramic city views, premium rooms, and unmatched service in central Tokyo.",
+    "rating": 4.6,
+    "price": 1100,
+    "bedroom": 2,
+    "bathroom": 2,
+    "size": "1,050",
+    "image": "/images/ritzcarlton.jpg"
+  },
+  {
+    "title": "W Barcelona",
+    "description": "Chic beachfront escape offering modern rooms, rooftop bars, and unforgettable Mediterranean sunsets.",
+    "rating": 4.4,
+    "price": 875,
+    "bedroom": 2,
+    "bathroom": 1,
+    "size": "900",
+    "image": "/images/wbarcelona.jpg"
+  }
+]

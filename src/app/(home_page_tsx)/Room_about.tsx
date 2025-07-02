@@ -25,25 +25,26 @@ const urbanist = Urbanist({
 export default function Room_about() {
     return (
         <div className='bg-white pt-[30px]'>
-            <div className="  max-w-7xl mx-auto px-[88px] ">
+            <div className="  max-w-7xl mx-auto lg:px-[88px] ">
                 <div className='  justify-between rounded-[14px] space-y-1'>
-                    <div className=' flex gap-8'>
-                        <span className=' text-[16px] font-[400] text-[#626262]'>Over View</span>
-                        <span className=' text-[16px] font-[400] text-[#626262]'>Features</span>
-                        <span className=' text-[16px] font-[400] text-[#626262]'>Reviews</span>
+                    <div className=' flex gap-3 md:gap-8 items-center justify-center md:justify-start px-0 md:px-2.5 lg:px-0'>
+                        <span className='text-[12px] md:text-[16px] font-[400] text-[#626262]'>Over View</span>
+                        <span className='text-[12px] md:text-[16px] font-[400] text-[#626262]'>Features</span>
+                        <span className='text-[12px] md:text-[16px] font-[400] text-[#626262]'>Reviews</span>
                         
-                        <Button className=' flex items-center justify-center gap-1.5 bg-none shadow-none bg-[#007DD0] hover:bg-[#007DD0] w-[110px] h-[32px] rounded-full'>
+                        <Button className=' flex items-center justify-center gap-1.5 bg-none shadow-none bg-[#007DD0] hover:bg-[#007DD0] 
+                        w-[100px] md:w-[110px] h-6 md:h-[32px] rounded-full'>
 
-                            <span className=' text-2xl text-[#ffffff] '><FiMessageCircle /></span>
-                            <span className=' text-[#ffffff] text-[14px] font-[400]'>Message</span>
+                            <span className='text-lg md:text-2xl text-[#ffffff] '><FiMessageCircle /></span>
+                            <span className='text-[12px] text-[#ffffff] md:text-[14px] font-[400]'>Message</span>
                         </Button>
                     </div>
                 </div>
-                <div className='grid grid-cols-5'>
+                <div className=' grid md:grid-cols-5 px-2.5 md:px-2.5 lg:px-0'>
                     {/* left section */}
-                    <div className=' col-span-3'>
+                    <div className=' md:col-span-3'>
                         {/* proparty type */}
-                        <div className=' flex gap-5 col-span-3'>
+                        <div className=' flex gap-5 col-span-3 justify-between md:justify-start '>
                             {/* proparty type */}
                             <div className=' pt-[26px]'>
                                 <div>
@@ -79,7 +80,6 @@ export default function Room_about() {
                         </div>
 
                         {/* Features */}
-
                         <div className=' pt-5'>
                             <div>
                                 <h4 className={`text-lg font-semibold text-[#252525] ${urbanist.variable}`}>Features</h4>
@@ -144,9 +144,9 @@ export default function Room_about() {
 
                         </div>
                     </div>
-                    <div className=' col-span-2'>
-                        <div className=' flex items-center justify-center'>
-                            <div className=' h-[240px] w-[268px] border-[1px] border-[#A3D0EE] rounded-[12px] flex items-center justify-center'>
+                    <div className=' md:col-span-2 pt-2.5 md:px-0 lg:pt-0 mx-auto '>
+                        <div className=' flex items-center justify-center '>
+                            <div className=' h-[240px] w-[268px] border-[1px] border-[#A3D0EE] rounded-[12px] flex items-center justify-center mx-auto'>
                                 <div>
                                     <p className='text-[16px] font-[400] text-[#000000]'>1 week, 2 adults, 1 child</p>
                                     <h3 className=' text-xl font-bold text-black'>USD $6,112</h3>

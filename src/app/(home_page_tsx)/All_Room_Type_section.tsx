@@ -18,25 +18,25 @@ import { IoIosArrowDown } from "react-icons/io";
 export default function All_Room_Type_section() {
     return (
         <div className='bg-white pt-[30px]'>
-            <div className="  max-w-7xl mx-auto px-[88px]  ">
+            <div className="  max-w-7xl mx-auto lg:px-[88px] px-2.5">
 
 
 
                 <div className="bg-white ">
                     {/* Header Row */}
-                    <div className="grid grid-cols-6 gap-4 font-semibold bg-[#007DD0] text-base-content p-4">
-                        <div>Room type</div>
-                        <div>Number of guests</div>
-                        <div>Price for 1 week</div>
-                        <div>Your choices</div>
-                        <div>Select rooms</div>
-                        <div>Your choices</div>
+                    <div className=" hidden md:grid grid-cols-6 gap-4 font-semibold bg-[#007DD0] text-base-content p-4">
+                        <div className='tett-sm lg:text-[16px] font-[700]'>Room type</div>
+                        <div className='tett-sm lg:text-[16px] font-[700]'>Number of guests</div>
+                        <div className='tett-sm lg:text-[16px] font-[700]'>Price for 1 week</div>
+                        <div className='tett-sm lg:text-[16px] font-[700]'>Your choices</div>
+                        <div className='tett-sm lg:text-[16px] font-[700]'>Select rooms</div>
+                        <div className='tett-sm lg:text-[16px] font-[700]'>Your choices</div>
 
                     </div>
 
                     {/* Data Row */}
-                    <div className="grid grid-cols-6 gap-4 items-center border-b-[1px] border-[#007DD05C] p-2.5 ">
-                        <div className='border-r-[1px] border-[#007DD05C]'>
+                    <div className="grid md:grid-cols-6 gap-4 items-center border-b-[1px] border-[#007DD05C] p-2.5 ">
+                        <div className='md:border-r-[1px] md:border-[#007DD05C]'>
                             <h4 className='text-[12px] font-bold text-[#007DD0]'>Twin Room</h4>
                             <span className=' flex gap-x-2 pt-2.5'>
                                 <span className='text-[12px] font-bold text-[#252525]'>2 <span className=' font-[400]'>single beds</span></span>
@@ -78,84 +78,47 @@ export default function All_Room_Type_section() {
                                 </span>
                             </div>
                         </div>
-                        <div className='border-r-[1px] border-[#007DD05C] flex h-full'>
-                            <span><GoPerson className=' text-2xl text-[#626262]' /></span>
-                            <span><GoPerson className=' text-2xl text-[#626262]' /></span>
+                        <div className='flex md:hidden  items-center justify-between pr-10'>
+                            <div className='md:border-r-[1px] md:border-[#007DD05C] flex h-full'>
+                                <span><GoPerson className=' text-2xl text-[#626262]' /></span>
+                                <span><GoPerson className=' text-2xl text-[#626262]' /></span>
+                            </div>
+                            <div className="font-bold block md:hidden text-black text-lg md:border-r-[1px] md:border-[#007DD05C] h-full">
+                                $282
+                            </div>
+
                         </div>
-                        <div className="font-bold text-black text-lg border-r-[1px] border-[#007DD05C] h-full">$282</div>
-                        <div className='border-r-[1px] border-[#007DD05C] h-full'>
+                        
+                            <div className=' border-r-[1px] border-[#007DD05C] hidden md:flex h-full'>
+                                <span><GoPerson className=' text-2xl text-[#626262]' /></span>
+                                <span><GoPerson className=' text-2xl text-[#626262]' /></span>
+                            </div>
+                       
+                        
+                            <div className="hidden md:block font-bold text-black text-lg border-r-[1px] border-[#007DD05C] h-full">$282</div>
+
+                        
+                        <div className=' flex items-center justify-between md:hidden pr-10'>
+                            <div className='md:border-r-[1px] md:border-[#007DD05C] h-full'>
+                                <div className="text-[16px] font-[400] text-black">Breakfast included</div>
+                                <div className="text-[#FE0D05] text-[16px] font-[400]">Only 4 rooms left</div>
+                            </div>
+                            <div className='md:border-r-[1px] md:border-[#007DD05C]  h-full '>
+                                <button className=' border-[1px] rounded-full w-[60px] flex items-center px-3 justify-between'>
+                                    <span className=' text-[16px] text-[#626262] font-[400]'>
+                                        0
+                                    </span>
+                                    <span className=' bg-[#ECECEC] rounded-full'>
+                                        <IoIosArrowDown className=' text-[#626262]' />
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                        <div className='border-r-[1px] border-[#007DD05C] h-full hidden md:block'>
                             <div className="text-[16px] font-[400] text-black">Breakfast included</div>
                             <div className="text-[#FE0D05] text-[16px] font-[400]">Only 4 rooms left</div>
                         </div>
-                        <div className='border-r-[1px] border-[#007DD05C]  h-full'>
-                            <button className=' border-[1px] rounded-full w-[60px] flex items-center px-3 justify-between'>
-                                <span className=' text-[16px] text-[#626262] font-[400]'>
-                                    0
-                                </span>
-                                <span className=' bg-[#ECECEC] rounded-full'>
-                                    <IoIosArrowDown  className=' text-[#626262]' />
-                                </span>
-                            </button>
-                        </div>
-                        <div className=' h-full'>
-                            <button className=' btn w-[176px] h-[34px] rounded-full bg-[#007DD0] border-none shadow-none text-[14px] '>
-                                Reserve
-                            </button>
-                        </div>
-                    </div>
-                    <div className="grid grid-cols-6 gap-4 items-center border-b-[1px] border-[#007DD05C] p-2.5 ">
-                        <div className='border-r-[1px] border-[#007DD05C]'>
-                            <h4 className='text-[12px] font-bold text-[#007DD0]'>Deluxe Double Room</h4>
-                            <span className=' flex gap-x-2 pt-2.5'>
-                                <span className='text-[12px] font-bold text-[#252525]'>2 <span className=' font-[400]'>single beds</span></span>
-                                <span className=' flex items-center justify-center gap-1'>
-                                    <span className='text-[#626262]'><IoBedOutline /></span>
-                                    <span className='text-[#626262]'><IoBedOutline /></span>
-
-                                </span>
-                            </span>
-
-                            <div className='grid grid-cols-2 items-center justify-between pt-2.5'>
-                                <span className=' flex gap-2'>
-                                    <span className=''> <span className=' text-[16px] text-[#626262]'> <MdOutlineBathroom /></span>  </span>
-                                    <span className=' text-[12px] text-[#252525] font-[400]'>Room</span>
-                                </span>
-                                <span className=' flex gap-2'>
-                                    <span className=''> <span className=' text-[16px] text-[#626262]'> <SlSizeFullscreen /></span>  </span>
-                                    <span className=' text-[12px] text-[#252525] font-[400]'>1,200 <small>sq <small>ft</small></small></span>
-                                </span>
-                            </div>
-                            <div className='grid grid-cols-2 items-center justify-between pt-2.5'>
-                                <span className=' flex gap-2'>
-                                    <span className=''> <span className=' text-[16px] text-[#626262]'> <TbAirConditioning /></span>  </span>
-                                    <span className=' text-[12px] text-[#252525] font-[400] inlink'> Ac</span>
-                                </span>
-                                <span className=' flex gap-2'>
-                                    <span className=''> <span className=' text-[16px] text-[#626262]'> <PiBathtubThin /></span>  </span>
-                                    <span className=' text-[12px] text-[#252525] font-[400]'>Bathroom</span>
-                                </span>
-                            </div>
-                            <div className='grid grid-cols-2 items-center justify-between pt-2.5'>
-                                <span className=' flex gap-2'>
-                                    <span className=''> <span className=' text-[16px] text-[#626262]'> <FaTv /></span>  </span>
-                                    <span className=' text-[12px] text-[#252525] font-[400] inlink'> TV</span>
-                                </span>
-                                <span className=' flex gap-2'>
-                                    <span className=''> <span className=' text-[16px] text-[#626262]'> <IoWifi /></span>  </span>
-                                    <span className=' text-[12px] text-[#252525] font-[400]'>WIFI</span>
-                                </span>
-                            </div>
-                        </div>
-                        <div className='border-r-[1px] border-[#007DD05C] flex h-full'>
-                            <span><GoPerson className=' text-2xl text-[#626262]' /></span>
-                            <span><GoPerson className=' text-2xl text-[#626262]' /></span>
-                        </div>
-                        <div className="font-bold text-black text-lg border-r-[1px] border-[#007DD05C] h-full">$282</div>
-                        <div className='border-r-[1px] border-[#007DD05C] h-full'>
-                            <div className="text-[16px] font-[400] text-black">Breakfast included</div>
-                            <div className="text-[#FE0D05] text-[16px] font-[400]">Only 4 rooms left</div>
-                        </div>
-                        <div className='  h-full'>
+                        <div className='border-r-[1px] border-[#007DD05C]  h-full  hidden md:block'>
                             <button className=' border-[1px] rounded-full w-[60px] flex items-center px-3 justify-between'>
                                 <span className=' text-[16px] text-[#626262] font-[400]'>
                                     0
@@ -165,10 +128,15 @@ export default function All_Room_Type_section() {
                                 </span>
                             </button>
                         </div>
-
+                        <div className=' h-full'>
+                            <button className=' btn w-[176px] md:w-[100px] lg:w-[176px] h-[34px] rounded-full bg-[#007DD0] border-none shadow-none text-[14px] '>
+                                Reserve
+                            </button>
+                        </div>
                     </div>
-                    <div className="grid grid-cols-6 gap-4 items-center border-b-[1px] border-[#007DD05C] p-2.5 ">
-                        <div className='border-r-[1px] border-[#007DD05C]'>
+                  
+                    <div className="grid md:grid-cols-6 gap-4 items-center border-b-[1px] border-[#007DD05C] p-2.5 ">
+                        <div className='md:border-r-[1px] md:border-[#007DD05C]'>
                             <h4 className='text-[12px] font-bold text-[#007DD0]'>Deluxe Double Room</h4>
                             <span className=' flex gap-x-2 pt-2.5'>
                                 <span className='text-[12px] font-bold text-[#252525]'>2 <span className=' font-[400]'>single beds</span></span>
@@ -210,27 +178,157 @@ export default function All_Room_Type_section() {
                                 </span>
                             </div>
                         </div>
-                        <div className='border-r-[1px] border-[#007DD05C] flex h-full'>
-                            <span><GoPerson className=' text-2xl text-[#626262]' /></span>
-                            <span><GoPerson className=' text-2xl text-[#626262]' /></span>
+                        <div className='flex md:hidden  items-center justify-between pr-10'>
+                            <div className='md:border-r-[1px] md:border-[#007DD05C] flex h-full'>
+                                <span><GoPerson className=' text-2xl text-[#626262]' /></span>
+                                <span><GoPerson className=' text-2xl text-[#626262]' /></span>
+                            </div>
+                            <div className="font-bold block md:hidden text-black text-lg md:border-r-[1px] md:border-[#007DD05C] h-full">
+                                $282
+                            </div>
+
                         </div>
-                        <div className="font-bold text-black text-lg border-r-[1px] border-[#007DD05C] h-full">$282</div>
-                        <div className='border-r-[1px] border-[#007DD05C] h-full'>
+                        
+                            <div className=' border-r-[1px] border-[#007DD05C] hidden md:flex h-full'>
+                                <span><GoPerson className=' text-2xl text-[#626262]' /></span>
+                                <span><GoPerson className=' text-2xl text-[#626262]' /></span>
+                            </div>
+                       
+                        
+                            <div className="hidden md:block font-bold text-black text-lg border-r-[1px] border-[#007DD05C] h-full">$282</div>
+
+                        
+                        <div className=' flex items-center justify-between md:hidden pr-10'>
+                            <div className='md:border-r-[1px] md:border-[#007DD05C] h-full'>
+                                <div className="text-[16px] font-[400] text-black">Breakfast included</div>
+                                <div className="text-[#FE0D05] text-[16px] font-[400]">Only 4 rooms left</div>
+                            </div>
+                            <div className='md:border-r-[1px] md:border-[#007DD05C]  h-full '>
+                                <button className=' border-[1px] rounded-full w-[60px] flex items-center px-3 justify-between'>
+                                    <span className=' text-[16px] text-[#626262] font-[400]'>
+                                        0
+                                    </span>
+                                    <span className=' bg-[#ECECEC] rounded-full'>
+                                        <IoIosArrowDown className=' text-[#626262]' />
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                        <div className='border-r-[1px] border-[#007DD05C] h-full hidden md:block'>
                             <div className="text-[16px] font-[400] text-black">Breakfast included</div>
                             <div className="text-[#FE0D05] text-[16px] font-[400]">Only 4 rooms left</div>
                         </div>
-                        <div className=' h-full'>
+                        <div className='  h-full  hidden md:block'>
                             <button className=' border-[1px] rounded-full w-[60px] flex items-center px-3 justify-between'>
                                 <span className=' text-[16px] text-[#626262] font-[400]'>
                                     0
                                 </span>
                                 <span className=' bg-[#ECECEC] rounded-full'>
-                                    <IoIosArrowDown  className=' text-[#626262]' />
+                                    <IoIosArrowDown className=' text-[#626262]' />
                                 </span>
                             </button>
                         </div>
-                        
+                       
                     </div>
+                  
+                    <div className="grid md:grid-cols-6 gap-4 items-center border-b-[1px] border-[#007DD05C] p-2.5 ">
+                        <div className='md:border-r-[1px] md:border-[#007DD05C]'>
+                            <h4 className='text-[12px] font-bold text-[#007DD0]'>Deluxe Double Room</h4>
+                            <span className=' flex gap-x-2 pt-2.5'>
+                                <span className='text-[12px] font-bold text-[#252525]'>2 <span className=' font-[400]'>single beds</span></span>
+                                <span className=' flex items-center justify-center gap-1'>
+                                    <span className='text-[#626262]'><IoBedOutline /></span>
+                                    <span className='text-[#626262]'><IoBedOutline /></span>
+
+                                </span>
+                            </span>
+
+                            <div className='grid grid-cols-2 items-center justify-between pt-2.5'>
+                                <span className=' flex gap-2'>
+                                    <span className=''> <span className=' text-[16px] text-[#626262]'> <MdOutlineBathroom /></span>  </span>
+                                    <span className=' text-[12px] text-[#252525] font-[400]'>Room</span>
+                                </span>
+                                <span className=' flex gap-2'>
+                                    <span className=''> <span className=' text-[16px] text-[#626262]'> <SlSizeFullscreen /></span>  </span>
+                                    <span className=' text-[12px] text-[#252525] font-[400]'>1,200 <small>sq <small>ft</small></small></span>
+                                </span>
+                            </div>
+                            <div className='grid grid-cols-2 items-center justify-between pt-2.5'>
+                                <span className=' flex gap-2'>
+                                    <span className=''> <span className=' text-[16px] text-[#626262]'> <TbAirConditioning /></span>  </span>
+                                    <span className=' text-[12px] text-[#252525] font-[400] inlink'> Ac</span>
+                                </span>
+                                <span className=' flex gap-2'>
+                                    <span className=''> <span className=' text-[16px] text-[#626262]'> <PiBathtubThin /></span>  </span>
+                                    <span className=' text-[12px] text-[#252525] font-[400]'>Bathroom</span>
+                                </span>
+                            </div>
+                            <div className='grid grid-cols-2 items-center justify-between pt-2.5'>
+                                <span className=' flex gap-2'>
+                                    <span className=''> <span className=' text-[16px] text-[#626262]'> <FaTv /></span>  </span>
+                                    <span className=' text-[12px] text-[#252525] font-[400] inlink'> TV</span>
+                                </span>
+                                <span className=' flex gap-2'>
+                                    <span className=''> <span className=' text-[16px] text-[#626262]'> <IoWifi /></span>  </span>
+                                    <span className=' text-[12px] text-[#252525] font-[400]'>WIFI</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div className='flex md:hidden  items-center justify-between pr-10'>
+                            <div className='md:border-r-[1px] md:border-[#007DD05C] flex h-full'>
+                                <span><GoPerson className=' text-2xl text-[#626262]' /></span>
+                                <span><GoPerson className=' text-2xl text-[#626262]' /></span>
+                            </div>
+                            <div className="font-bold block md:hidden text-black text-lg md:border-r-[1px] md:border-[#007DD05C] h-full">
+                                $282
+                            </div>
+
+                        </div>
+                        
+                            <div className=' border-r-[1px] border-[#007DD05C] hidden md:flex h-full'>
+                                <span><GoPerson className=' text-2xl text-[#626262]' /></span>
+                                <span><GoPerson className=' text-2xl text-[#626262]' /></span>
+                            </div>
+                       
+                        
+                            <div className="hidden md:block font-bold text-black text-lg border-r-[1px] border-[#007DD05C] h-full">$282</div>
+
+                        
+                        <div className=' flex items-center justify-between md:hidden pr-10'>
+                            <div className='md:border-r-[1px] md:border-[#007DD05C] h-full'>
+                                <div className="text-[16px] font-[400] text-black">Breakfast included</div>
+                                <div className="text-[#FE0D05] text-[16px] font-[400]">Only 4 rooms left</div>
+                            </div>
+                            <div className='md:border-r-[1px] md:border-[#007DD05C]  h-full '>
+                                <button className=' border-[1px] rounded-full w-[60px] flex items-center px-3 justify-between'>
+                                    <span className=' text-[16px] text-[#626262] font-[400]'>
+                                        0
+                                    </span>
+                                    <span className=' bg-[#ECECEC] rounded-full'>
+                                        <IoIosArrowDown className=' text-[#626262]' />
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                        <div className='border-r-[1px] border-[#007DD05C] h-full hidden md:block'>
+                            <div className="text-[16px] font-[400] text-black">Breakfast included</div>
+                            <div className="text-[#FE0D05] text-[16px] font-[400]">Only 4 rooms left</div>
+                        </div>
+                        <div className='  h-full  hidden md:block'>
+                            <button className=' border-[1px] rounded-full w-[60px] flex items-center px-3 justify-between'>
+                                <span className=' text-[16px] text-[#626262] font-[400]'>
+                                    0
+                                </span>
+                                <span className=' bg-[#ECECEC] rounded-full'>
+                                    <IoIosArrowDown className=' text-[#626262]' />
+                                </span>
+                            </button>
+                        </div>
+                       
+                    </div>
+                  
+                  
+                  
                 </div>
             </div>
         </div>

@@ -1,0 +1,37 @@
+[
+  {
+    "title": "“Breathtaking Views and Luxury Comfort!”",
+    "description": "The Executive Suite offered amazing sea views, clean space, modern design, and perfect amenities. Ideal for relaxing or working, I felt at home and will definitely return next year.",
+    "stars": 5,
+    "author": "Sofia B., France",
+    "date": "23.10.2024"
+  },
+  {
+    "title": "“Unforgettable Stay with Excellent Service!”",
+    "description": "Warm greetings, spotless rooms, and a delicious breakfast made our trip memorable. The hotel staff was professional and helpful, making our vacation experience unforgettable and truly enjoyable from start to finish.",
+    "stars": 5,
+    "author": "Liam M., UK",
+    "date": "15.09.2024"
+  },
+  {
+    "title": "“Top-notch Facilities and Friendly Staff!”",
+    "description": "Stayed for work—perfect room setup, fast internet, peaceful sleep. Staff provided great restaurant tips. Loved the lobby atmosphere. Everything felt smooth, efficient, and professional throughout my entire business trip here.",
+    "stars": 4,
+    "author": "Aria T., USA",
+    "date": "01.08.2024"
+  },
+  {
+    "title": "“Beautiful Resort, Perfect for Families”",
+    "description": "Great family stay! Kids loved the pool, play area, and meals. Clean surroundings, safe environment, and friendly staff made everything easy. We'll definitely return for another peaceful family vacation next year.",
+    "stars": 3,
+    "author": "Ravi K., India",
+    "date": "10.07.2024"
+  },
+  {
+    "title": "“Exceptional Experience with Stunning Views!”",
+    "description": "Romantic honeymoon suite, gorgeous balcony views, and amazing service. Every detail was carefully arranged. It felt magical and private. Definitely one of the best getaways we’ve had as a couple.",
+    "stars": 5,
+    "author": "Emily R., Australia",
+    "date": "18.06.2024"
+  }
+]

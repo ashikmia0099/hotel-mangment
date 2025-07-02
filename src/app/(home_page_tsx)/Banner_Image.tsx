@@ -14,7 +14,7 @@ import Image from 'next/image'
 export default function Banner_Image() {
     return (
         <div className='bg-white pt-[30px]'>
-            <div className="  max-w-7xl mx-auto px-[88px] h-[461px] ">
+            <div className="  max-w-7xl mx-auto lg:px-[88px] h-[461px] px-2.5 ">
                 <div className='  justify-between rounded-[14px] space-y-1'>
                     <div className=' flex justify-between rounded-[14px] gap-1'>
                         <div>
