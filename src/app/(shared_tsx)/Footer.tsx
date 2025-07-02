@@ -6,7 +6,7 @@ import React from 'react'
 
 import logo from '../../../public/home_images/footer_logo.png'
 import { FaFacebookF, FaGithub, FaInstagram, FaTwitter } from 'react-icons/fa'
-import { PiMapPinAreaFill, PiMapPinAreaThin } from 'react-icons/pi'
+import { PiMapPinAreaFill } from 'react-icons/pi'
 import { FiPhone } from 'react-icons/fi'
 import { MdOutlineEmail } from 'react-icons/md'
 import { RiGooglePlayLine } from "react-icons/ri";

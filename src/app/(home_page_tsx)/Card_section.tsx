@@ -10,7 +10,7 @@ import { IoMdInformationCircleOutline } from 'react-icons/io';
 
 import { Button } from "../../components/ui/button"
 
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -20,7 +20,6 @@ import 'swiper/css/pagination';
 
 
 // import required modules
-import { Grid, Pagination } from 'swiper/modules';
 
 import { Lens } from "../../components/magicui/lens";
 
@@ -74,7 +73,7 @@ export default function Card_section() {
           >
             {
               cards.map((data, index) => (
-                <SwiperSlide>
+                <SwiperSlide key={index}>
                   <div className=' '>
                     <div className=' relative'>
                       <div className=''>
@@ -168,7 +167,7 @@ export default function Card_section() {
           >
             {
               cards.map((data, index) => (
-                <SwiperSlide>
+                <SwiperSlide key={index}>
                   <div className=' '>
                     <div className=' relative'>
                       <div className=''>

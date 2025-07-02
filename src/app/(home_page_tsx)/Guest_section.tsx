@@ -16,7 +16,7 @@ import 'swiper/css/pagination';
 
 
 // import required modules
-import { Pagination, Navigation } from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 
 
 

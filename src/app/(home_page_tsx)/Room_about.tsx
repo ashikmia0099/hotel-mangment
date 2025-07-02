@@ -6,7 +6,7 @@ import { FaPersonSwimming } from 'react-icons/fa6'
 import { FiMessageCircle } from 'react-icons/fi'
 import { IoWifiSharp } from 'react-icons/io5'
 import { MdLocalDining } from 'react-icons/md'
-import { TbAirConditioning, TbCirclesRelation } from 'react-icons/tb'
+import { TbAirConditioning } from 'react-icons/tb'
 
 import { Button } from "../../components/ui/button"
 

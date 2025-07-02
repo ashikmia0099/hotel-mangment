@@ -1,7 +1,6 @@
 import React from 'react'
 
 import { IoBookmarkOutline } from "react-icons/io5";
-import { IoIosArrowRoundForward } from "react-icons/io";
 import { LiaShareAltSolid } from 'react-icons/lia';
 
 import { Button } from "../../components/ui/button"

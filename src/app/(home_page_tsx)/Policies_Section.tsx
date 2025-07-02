@@ -17,7 +17,7 @@ export default function Policies_Section() {
                                 <h3 className=' text-sm md:text-[16px] font-semibold text-[#252525] pb-3 md:pb-0'>Available 24 hours</h3>
                                 <p className='text-sm md:text-[16px] text-[#626262] font-[400]'>
                                     Guests are required to show a photo identification and credit card upon check-in
-                                    You'll need to let the property know in advance what time you'll arrive
+                                    You&rsquo;ll need to let the property know in advance what time you&rsquo;ll arrive.
                                 </p>
                             </div>
                         </div>
