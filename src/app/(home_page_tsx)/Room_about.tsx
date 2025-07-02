@@ -28,7 +28,7 @@ export default function Room_about() {
             <div className="  max-w-7xl mx-auto lg:px-[88px] ">
                 <div className='  justify-between rounded-[14px] space-y-1'>
                     <div className=' flex gap-3 md:gap-8 items-center justify-center md:justify-start px-0 md:px-2.5 lg:px-0'>
-                        <span className='text-[12px] md:text-[16px] font-[400] text-[#626262]'>Over View</span>
+                        <span className='text-[12px] md:text-[16px] font-[500] text-[#007DD0]'>Over View</span>
                         <span className='text-[12px] md:text-[16px] font-[400] text-[#626262]'>Features</span>
                         <span className='text-[12px] md:text-[16px] font-[400] text-[#626262]'>Reviews</span>
                         

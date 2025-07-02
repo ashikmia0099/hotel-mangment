@@ -49,7 +49,7 @@ export default function Footer() {
                     {/* right section */}
 
                     <div className=' md:col-span-4'>
-                        <div className='block lg:flex gap-x-[78px]'>
+                        <div className='block lg:flex gap-x-[85px]'>
                             <div className='  space-y-3 py-4 md:py-0 '>
                                 <p className=' text-sm md:text-[16px] font-bold md:font-medium text-white'>Home</p>
                                 <p className=' text-sm md:text-[16px] font-bold md:font-medium text-white'>Hotels</p>
@@ -57,7 +57,7 @@ export default function Footer() {
                                 <p className=' text-sm md:text-[16px] font-bold md:font-medium text-white'>About Us</p>
                                 <p className=' text-sm md:text-[16px] font-bold md:font-medium text-white'>Contact Us</p>
                             </div>
-                            <div>
+                            <div className=' '>
                                 <div className='flex items-center gap-x-2'>
                                     <span><FiPhone className='text-2xl text-white' /></span>
                                     <span className={`text-sm font-[400] text-white ${poppins.variable} font-poppins`}>+1 (555) 123-4567</span>
@@ -66,25 +66,25 @@ export default function Footer() {
                                     <span><MdOutlineEmail className='text-2xl text-white' /></span>
                                     <span className={`text-sm font-[400] text-white ${poppins.variable} font-poppins`}>support@[yourappname].com</span>
                                 </div>
-                                <div className='flex items-center gap-x-2 pt-6'>
-                                    <span className='text-xl font-[400] text-white'>Download Our App</span>
-                                    <span><RiGooglePlayLine className='text-[34px] text-white' /></span>
-                                    <span><AiOutlineApple className='text-[34px] text-white' /></span>
+                                <div className='flex items-center gap-x-2 pt-3 md:pt-6'>
+                                    <span className='text-[16px] md:text-xl font-[400] text-white '>Download Our App</span>
+                                    <span><RiGooglePlayLine className='text-xl md:text-[34px] text-white' /></span>
+                                    <span><AiOutlineApple className='text-xl md:text-[34px] text-white' /></span>
 
                                 </div>
 
-                                <div className=' flex items-center gap-x-8 pt-8 md:hidden'>
-                                    <span className='text-xl text-white'><FaTwitter /></span>
-                                    <span className='text-xl text-white'><FaFacebookF /></span>
-                                    <span className='text-xl text-white'><FaInstagram /></span>
-                                    <span className='text-xl text-white'><FaGithub /></span>
+                                <div className=' flex items-center gap-x-4 md:gap-x-8 pt-3 md:pt-8 md:hidden'>
+                                    <span className=' text-xl text-white'><FaTwitter /></span>
+                                    <span className=' text-xl text-white'><FaFacebookF /></span>
+                                    <span className=' text-xl text-white'><FaInstagram /></span>
+                                    <span className=' text-xl text-white'><FaGithub /></span>
                                 </div>
 
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className='block md:flex justify-between items-center pt-8'>
+                <div className='block md:flex justify-between items-center pt-3 md:pt-8'>
                     <div className=' flex items-center gap-x-2 '>
                         <span className='text-3xl text-white'> <PiMapPinAreaFill /></span>
                         <span className={`${poppins.variable} font-poppins text-sm font-[400] text-white`}> 123 Travel St, Suite 100, City, Country</span>

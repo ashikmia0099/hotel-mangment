@@ -17,9 +17,12 @@ import { IoIosArrowDown } from 'react-icons/io'
 import { GoArrowUpRight } from 'react-icons/go'
 import { PiUserLight } from 'react-icons/pi'
 import { RxCrossCircled } from 'react-icons/rx'
+import { usePathname } from 'next/navigation'
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
+
+  const pathname = usePathname();
 
   const links = [
     { name: 'Home', href: '/' },
@@ -39,15 +42,20 @@ export default function Navbar() {
 
         {/* Desktop Links */}
         <nav className="hidden lg:flex items-center gap-6">
-          {links.map((link) => (
-            <Link
-              key={link.name}
-              href={link.href}
-              className="text-[16px] font-[400] text-[#626262] hover:text-[#007DD0]"
-            >
-              {link.name}
-            </Link>
-          ))}
+          {links.map((link) => {
+            const isActive = pathname === link.href;
+
+            return (
+              <Link
+                key={link.name}
+                href={link.href}
+                className={`text-[16px]  ${isActive ? 'text-[#007DD0] font-bold' : 'text-[#626262] font-[400] hover:text-blue-600'
+                  }`}
+              >
+                {link.name}
+              </Link>
+            );
+          })}
         </nav>
 
         {/* Right Side Buttons */}

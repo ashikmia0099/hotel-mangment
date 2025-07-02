@@ -64,15 +64,15 @@ export default function Card_section() {
             breakpoints={{
               320: {
                 slidesPerView: 1,
-                grid: { rows: 1 },
+             
               },
               640: {
-                slidesPerView: 2,
-                grid: { rows: 2 },
+                slidesPerView: 2.2,
+                
               },
               1024: {
-                slidesPerView: 3,
-                grid: { rows: 2 },
+                slidesPerView: 3.2,
+               
               },
             }}
 
@@ -158,15 +158,15 @@ export default function Card_section() {
             breakpoints={{
               320: {
                 slidesPerView: 1,
-                grid: { rows: 1 },
+                
               },
               640: {
-                slidesPerView: 2,
-                grid: { rows: 2 },
+                slidesPerView: 2.2,
+                
               },
               1024: {
-                slidesPerView: 3,
-                grid: { rows: 2 },
+                slidesPerView: 3.2,
+                
               },
             }}
 

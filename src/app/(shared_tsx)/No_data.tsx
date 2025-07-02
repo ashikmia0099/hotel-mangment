@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Lottie from 'lottie-react';
-import oopsAnimation from '@/assets/animations/oops.json'; // ✅ correct ES import
+import oopsAnimation from '@/assets/animations/oops.json';
 
 export default function No_data() {
   return (
